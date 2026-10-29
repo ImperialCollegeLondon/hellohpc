@@ -32,6 +32,6 @@ pi=w*pi
 
 if myrank == 0:
     duration = time.time() - start_time
-    print(n, "   ", pi, "   ", duration)
+    print(f"{n:,d}", "   ", pi, "   ", duration)
 
 
