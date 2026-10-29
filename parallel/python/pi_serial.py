@@ -14,4 +14,4 @@ pi=w*psum
 duration = time.time() - start_time
 
 
-print(n, "   ", pi, "   ", duration)
+print(f"{n:,d}", "   ", pi, "   ", duration)
