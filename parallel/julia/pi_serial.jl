@@ -14,6 +14,11 @@ end
 using BenchmarkTools
 
 n = 10_000_000_000
-println(n)
-println(calc_pi(n))
-@btime calc_pi(n)
+result = calc_pi(n)
+t = @belapsed calc_pi($n)
+
+println(n, "    ", result, "    ", t)
+
+#println(n)
+#println(calc_pi(n))
+#@btime calc_pi(n)
